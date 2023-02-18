@@ -5,6 +5,41 @@
     margin: auto;
 }
 
-#flynns {
-    width: 100vh;
+.flynns-carousel {
+    position: relative;
+    height: 500px;
+}
+  
+.fly-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+  
+.fly {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.fly:active {
+    display: block;
+}
+
+#fly-pic {
+    animation: fade 1s ease-in both;
+}
+
+@keyframes fade {
+    0% {
+        background-color: black;
+        opacity: 0;
+    }
+    100% {
+        background-color: none;
+        opacity: 100%;
+    }
 }
