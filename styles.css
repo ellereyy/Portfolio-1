@@ -5,6 +5,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* MODAL STYLES*/
+#modal {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+    display: none;
+}
+
+#modal-textbox {
+	background-color: white;
+    text-align: center;
+	height: 140px;
+	width: 220px;
+	border-radius: 10px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    margin: 80vh auto auto auto;
+}
+
+#close {
+    background-color: seagreen;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+/* BODY STYLES */
 h1, h3 {
     font-family: 'Gloock', serif;
 }
@@ -17,7 +47,7 @@ body {
     background-color: antiquewhite;
 }
 
-#nav-bar {
+.nav-bar {
     display: flex;
     justify-content: space-between;
     background-color: rgb(46, 139, 87, 0.5);
@@ -27,7 +57,7 @@ body {
     padding: 1rem;
 }
 
-#page-links {
+.page-links {
     display: flex;
     justify-content: space-around;
     /* border: 2px solid black; */
@@ -56,6 +86,8 @@ footer {
     background-color: rgb(46, 139, 87, 0.5);
     backdrop-filter: blur(10px);
     padding: 0.5rem;
+    position: sticky;
+    bottom: 0;
 }
 
 .page-title {
@@ -63,10 +95,7 @@ footer {
     padding: 5vh 3vh 5vh 3vh;
 }
 
-.content-slide {
-    background-color: antiquewhite;
-    animation: slide-in 2s ease-in-out both;
-}
+
 
 
 
@@ -116,9 +145,9 @@ h1 {
     }
 }
 
+/* NEED TO FIX/TEST THIS KEYFRAME */
 @keyframes slide-in{
     0% {
-        background-color: antiquewhite;
         transform: translateX(100%);
     }
     100% {
@@ -126,6 +155,8 @@ h1 {
     }
 }
 
+
+/* ANIMATIONS */
 @keyframes slide-out{
     0% {
         transform: translateX(0);
@@ -136,6 +167,10 @@ h1 {
 }
   
 .slide-out {
-    animation: slide-out 1s forwards;
+    animation: slide-out 1s ease-in-out forwards;
 }
   
+.slide-in {
+    animation: slide-in 2s ease-in-out forwards;
+}
+
