@@ -14,11 +14,10 @@
     <!-- top bar content -->
     <nav class="nav-bar">
         <div class="page-links">
-            <button id="test">test</button>
-            <a href="/home.html" class="home-btn">Home</a>
-            <a href="about.html" class="abt-btn">About</a>
-            <a href="resume.html" class="res-btn">Resume</a>
-            <a href="" class="prj-btn">Projects</a>
+            <a href="/home.html" class="nav-btn" id="home-btn">Home</a>
+            <a href="/about.html" class="nav-btn" id="abt-btn">About</a>
+            <a href="resume.html" class="nav-btn" id="res-btn">Resume</a>
+            <a href="#" class="nav-btn" id="prj-btn">Projects</a>
         </div>
         <div id="social-links">
             <a href="https://www.linkedin.com/in/elle-reynolds/">LinkedIn</a>
@@ -38,10 +37,20 @@
     </div>
 
     <footer class="foot">
-        <span>Image references</span>
-        <span>Contact</span>
-        <span>Meet my pets</span>
+        <a href="#">Image references</a>
+        <a href="#" id="openModal">Contact</a>
+        <a href="#">Meet my pets</a>
     </footer>
+
+    <div id="modal">
+        <div id="modal-textbox">
+            <h4>Let's chat!</h4>
+            <p>email: elle.m.reynolds@gmail.com</p>
+            <a href="#" id="close">Close</a>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
