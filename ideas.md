@@ -26,6 +26,24 @@ JS GRAVEYARD
 
 CSS GRAVEYARD
 
+/* #intro {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #41EAD4;
+    border-radius: 20px;
+    margin: 30px
+} */
+
+/* .intro-words {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+} */
+
 thos
 /* .page-content {
     max-width: 768px;
