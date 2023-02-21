@@ -25,19 +25,19 @@
 
 
 // PLAY FLIGHT VIDEO  
-// const flyVid = document.getElementById('fly-vid')
+const flyVid = document.getElementById('fly-vid')
 
-// flyVid.addEventListener('mouseover', () => {
-//     flyVid.play();
-// })
+flyVid.addEventListener('mouseover', () => {
+    flyVid.play();
+})
 
-// flyVid.addEventListener('mouseout', () => {
-//     flyVid.pause();
-//   });
+flyVid.addEventListener('mouseout', () => {
+    flyVid.pause();
+  });
 
-// flyVid.addEventListener('ended', () => {
-//     flyVid.load();
-// })
+flyVid.addEventListener('ended', () => {
+    flyVid.load();
+})
 
 
 //DISPLAY/HIDE MODALS 

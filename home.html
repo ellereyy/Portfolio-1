@@ -13,7 +13,7 @@
 <body>
 
     <nav>
-        <span id="logo">elle</span>
+        <a href="/home.html" id="logo">elle</a>
         <div class="nav-links">
             <a href="/home.html" class="nav-btn" id="home-btn">Home</a>
             <a href="/about.html" class="nav-btn" id="abt-btn">About</a>
@@ -23,25 +23,31 @@
     </nav>
 
     <aside>
-            <a href="https://www.linkedin.com/in/elle-reynolds/">LinkedIn</a>
-            <a href="https://github.com/ellereyy">GitHub</a>
     </aside>
 
     <main id="home-page">
-        <div class="intro">
+        <div id="pic-box">
             <img src="/assets/elle_timber.jpg" alt="elle" id="prof-pic">
-            <div class="intro-words">
-                <p>Hi! My name is</p>
-                <h1>Elle Reynolds</h1>
-                <p>I am a software engineering student at General Assembly based in Mammoth Lakes, California.</p>
-            </div>
-        </div>     
+        </div>
+
+        <div id="intro-name">
+            <p>Hi! My name is <br> <span id="name">Elle Reynolds</span> </p>
+        </div>
+
+        <div id="intro-last">
+            <p>& I am a software engineering student at General Assembly based in Mammoth Lakes, California.</p>
+        </div>  
+
     </main>
 
-    <aside>test</aside>
-    
-    <div id="cat"></div>
+    <aside>
+        <div class="sticky">
+            <a href="https://www.linkedin.com/in/elle-reynolds/" target="_blank"><img src="assets/linkedin-icon.png" alt="linkedin" id="soc-icon"></a>
+            <a href="https://github.com/ellereyy" target="_blank"><img src="/assets/github-icon.png" alt="github" id="soc-icon"></a>
+        </div>
+    </aside>
 
+    
     <footer>
         <a href="#" class="foot-link">References</a>
         <a href="#" class="foot-link" id="openModal">Contact</a>

@@ -109,7 +109,7 @@ a {
 }
 
 /* ANIMATIONS */
-@keyframes fade {
+@keyframes fade-in {
     0% {
         background-color: black;
         opacity: 0;
