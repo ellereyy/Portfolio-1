@@ -26,6 +26,13 @@ JS GRAVEYARD
 
 CSS GRAVEYARD
 
+thos
+/* .page-content {
+    max-width: 768px;
+    margin: auto;
+    box-shadow: -5px -3px 8px rgb(186, 186, 186);
+} */
+
 /* LAYOUT ATTEMPT 1 FOR IMAGE/VIDEO */
 /* .img-vid-container {
     position: relative;

@@ -25,25 +25,25 @@
 
 
 // PLAY FLIGHT VIDEO  
-const flyVid = document.getElementById('fly-vid')
+// const flyVid = document.getElementById('fly-vid')
 
-flyVid.addEventListener('mouseover', () => {
-    flyVid.play();
-})
+// flyVid.addEventListener('mouseover', () => {
+//     flyVid.play();
+// })
 
-flyVid.addEventListener('mouseout', () => {
-    flyVid.pause();
-  });
+// flyVid.addEventListener('mouseout', () => {
+//     flyVid.pause();
+//   });
 
-flyVid.addEventListener('ended', () => {
-    flyVid.load();
-})
+// flyVid.addEventListener('ended', () => {
+//     flyVid.load();
+// })
 
 
 //DISPLAY/HIDE MODALS 
-const openBtn = document.getElementById('openModal')
-const modal = document.getElementById('modal')
-const closeBtn = document.getElementById('close')
+const openBtn = document.getElementById('open-modal')
+const modal = document.getElementsByClassName('modal')
+const closeBtn = document.getElementById('close-btn')
 
 console.log(openBtn)
 console.log(modal)
@@ -56,5 +56,5 @@ const closeModal = () => {
   modal.style.display = 'none';
 }
 
-openBtn.addEventListener('click', openModal)
-closeBtn.addEventListener('click', closeModal)
+openBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
