@@ -79,3 +79,12 @@ thos
 #fly-pic {
     animation: fade 1s ease-in both;
 } */
+
+
+HTML GRAVEYARD
+
+<p>Hi! My name is Elle and I am an aspiring software engineer based in the beautiful mountain town of Mammoth Lakes, California. When I’m not glued to my computer, you can find me outside either skiing, skydiving, riding bikes, paragliding, sailing, or hiking on the easiest trail I can find</p>
+        <p>Prior to pursuing software engineering, I worked for numerous nonprofit organizations on both the fundraising and mission side. Most recently, I worked for the non-profit branch of a ski resort, overseeing programs that generated funding for various youth education and athletic organizations. I’ve also taught at organizations that aim to make the outdoors more accessible to all youth. 
+        </p>
+        <p>I also love any opportunity to be creative, especially writing, welding together massive metal sculptures, or coming up with the most believable excuse as to why I have to bail on a 4AM 20 mile hike that I forgot to train for. 
+        </p>
