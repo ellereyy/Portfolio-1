@@ -3,7 +3,7 @@ const flyVid = document.getElementById('fly-vid')
 
 flyVid.addEventListener('mouseover', () => {
     flyVid.play();
-})
+});
 
 flyVid.addEventListener('mouseout', () => {
     flyVid.pause();
@@ -11,7 +11,7 @@ flyVid.addEventListener('mouseout', () => {
 
 flyVid.addEventListener('ended', () => {
     flyVid.load();
-})
+});
 
 
 //DISPLAY/HIDE MODALS 
