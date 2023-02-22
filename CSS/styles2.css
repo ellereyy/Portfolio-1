@@ -195,7 +195,7 @@ footer {
 
 /*INNER PAGE STYLES*/
 
-.fun-btn {
+.yp-btn {
     background-color: var(--bg-color);
     border: 4px solid white;
     box-shadow: 5px 5px #FBFF12; 
@@ -204,7 +204,7 @@ footer {
     border-radius: 5px;
 }
 
-.fun-btn:hover {
+.yp-btn:hover {
     background-color: var(--bg-color);
     border: 4px solid #FF206E;
     box-shadow: 5px 5px white;
