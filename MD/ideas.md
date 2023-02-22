@@ -11,6 +11,14 @@ current page to new page index
 
 JS GRAVEYARD
 
+// window.onload = (event) => {
+//   if (window.location.href.indexOf(navBtns) > -1) {
+//     mainContent.classList.add('slide-in');
+//   }
+// };
+
+
+
 // const homeImg = document.getElementById("fly-pic");
 // const homeVid = document.getElementById("fly-vid");
 
@@ -22,6 +30,40 @@ JS GRAVEYARD
 // // homeVid.addEventListener('ended', () => {
 // //     homeImg.style.display = 'block';
 // // });
+
+
+
+navBtns.addEventListener('click', (event) => {
+  mainContent.classList.add('slide-out');
+  event.preventDefault();
+  setTimeout(() => {
+    window.location.href = event.target.href;
+  }, 1000)
+});
+
+window.onload = () => {
+  abtPage.classList.add('slide-in');
+};
+
+const homePage = document.getElementById('home-page');
+const abtPage = document.getElementById('about-page');
+
+const homeBtn = document.getElementById('home-btn');
+const abtBtn = document.getElementById('abt-btn');
+
+
+abtBtn.addEventListener('click', (event) => {
+  homePage.classList.add('slide-out');
+  event.preventDefault();  
+  setTimeout(() => {
+        window.location.href = '/HTML/about.html';
+    }, 1000);
+});
+
+window.onload = () => {
+  abtPage.classList.add('slide-in');
+}
+
 
 
 CSS GRAVEYARD

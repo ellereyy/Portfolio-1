@@ -6,22 +6,22 @@
 //         make sure exit styling is removed after the click 
 
 
-// const test = document.getElementById('test');
+const test = document.getElementById('test');
 
-// const homePage = document.getElementById('hp');
-// const abtPage = document.getElementById('about-page');
-// console.log(abtPage)
-// console.log(homePage)
+const homePage = document.getElementById('home-page');
+const abtPage = document.getElementById('about-page');
+console.log(abtPage)
+console.log(homePage)
 
-// const homeBtn = document.getElementById('home-btn');
-// const abtBtn = document.getElementById('abt-btn');
+const homeBtn = document.getElementById('home-btn');
+const abtBtn = document.getElementById('abt-btn');
 
-// abtBtn.addEventListener('click', () => {
-//     homePage.classList.add('slide-out');
-//     setTimeout(() => {
-//         window.location.href = 'about-page.html';
-//     }, 4000);
-// })
+abtBtn.addEventListener('click', () => {
+    homePage.classList.add('slide-out');
+    setTimeout(() => {
+        window.location.href = 'about-page.html';
+    }, 4000);
+})
 
 //DISPLAY/HIDE MODALS 
 const openBtn = document.getElementById('open-modal')
