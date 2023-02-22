@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Elle Reynolds</title>
     <link rel="icon" href="assets/parachute.png">
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="/CSS/styles2.css">
     <script src="app.js" defer></script>
 </head>
+
 <body>
 
     <nav>
         <a href="/home.html" id="logo">elle</a>
         <div class="nav-links">
-            <a href="/home.html" class="nav-btn" id="home-btn">Home</a>
-            <a href="/about.html" class="nav-btn" id="abt-btn">About</a>
-            <a href="resume.html" class="nav-btn" id="res-btn">Resume</a>
-            <a href="#" class="nav-btn" id="prj-btn">Projects</a>
+            <a href="/HTML/home.html" class="nav-btn" id="home-btn">Home</a>
+            <a href="/HTML/about.html" class="nav-btn" id="abt-btn">About</a>
+            <a href="/HTML/resume.html" class="nav-btn" id="res-btn">Resume</a>
+            <a href="/HTML/projects.html" class="nav-btn" id="prj-btn">Projects</a>
         </div>
     </nav>
 
     <aside>
-
     </aside>
 
-    <main id="about-page">  
-
-        <div id="video-container">
-           
+    <main id="home-page">
+        <div id="pic-box">
+            <img src="/assets/elle_timber.jpg" alt="elle" id="prof-pic">
         </div>
 
-        <div class="txt-container">
-            <h1>Resume</h1>
+        <div id="intro-name">
+            <p>Hi! My name is <br> <span id="name">Elle Reynolds</span> </p>
         </div>
+
+        <div id="intro-last">
+            <p id="abt-me-short">& I am a software engineering student at General Assembly based in Mammoth Lakes, California.</p>
+        </div>  
 
     </main>
 
@@ -44,19 +47,27 @@
         </div>
     </aside>
 
+    
     <footer>
         <a href="#" class="foot-link">References</a>
         <a href="#" class="foot-link" id="open-modal">Contact</a>
         <a href="#" class="foot-link">Pets</a>
     </footer>
 
-    <div class="modal">
+    <div id="modal">
         <div id="contact-modal">
             <h4>Let's chat!</h4>
             <p>email: elle.m.reynolds@gmail.com</p>
             <a href="#" id="close-btn">Close</a>
         </div>
     </div>
-    
+
+    <!-- <div id="references">
+        <p>photo references</p>
+        <p>Favicon <a href="https://www.flaticon.com/free-icons/parachute" title="parachute icons">Parachute icons created by Dreamstale - Flaticon</a></p>
+    </div> -->
+
+
 </body>
+
 </html>
