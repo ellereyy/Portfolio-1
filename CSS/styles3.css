@@ -16,6 +16,10 @@
     font-family: var(--sans-serif-font);
 }
 
+a {
+    text-decoration: none;
+}
+
 /*PAGE LAYOUT STYLES*/
 
 body {
@@ -25,6 +29,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 50px 1fr 30px;
+}
+
+#logo {
+    font-family: var(--serif-font);
 }
 
 nav {
@@ -120,6 +128,7 @@ footer {
     background-color: var(--blue-color);
     border-radius: 20px;
     box-shadow: 10px 10px white;  
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -128,8 +137,10 @@ footer {
 .pink-box {
     background-color: var(--pink-color);
     border-radius: 20px;
-    display: flex;
     box-shadow: 10px 10px white;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -138,34 +149,39 @@ footer {
     background-color: var(--yellow-color);
     border-radius: 20px;
     box-shadow: 10px 10px white;
+    margin: 1rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .media-box {
+    border: 5px solid white;
     border-radius: 20px;
     box-shadow: 10px 10px var(--yellow-color);
+    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .plain-box {
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .title-box {
-    font-size: 48px;
-    font-family: var(--serif-font);
+    font-size: 3rem;
     padding: 10px;
     text-align: center;
 }
 
 .blurb-box {
     padding: 10px
+    font-size: 
 }
 
 
@@ -205,4 +221,20 @@ footer {
 
 .blkfnt {
     color: black;
+}
+
+.serif {
+    font-family: var(--serif-font);
+}
+
+.small-text {
+    font-size: 16px;
+}
+
+/*ID STYLES*/
+
+#prof-pic {
+    border-radius: 50%;
+    width: 50%;
+    max-width: 200px;
 }
