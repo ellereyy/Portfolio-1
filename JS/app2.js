@@ -1,9 +1,4 @@
-//IMAGE CAROUSEL 
-
-
-
 //HAMBURGER MENU
-
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const logo = document.querySelector('#logo');
@@ -64,3 +59,27 @@ const flyVid = document.getElementById('fly-vid')
   flyVid.addEventListener('ended', () => {
       flyVid.load();
   });
+
+  //IMAGE CAROUSEL 
+
+let currentImgIndex = 0;
+let previousImgIndex = 0; 
+
+const images = document.getElementsByClassName('photo');
+
+function cycle(nextToPrevious) {
+  previousImgIndex = currentImgIndex
+  currentImgIndex = currentImgIndex + nextToPrevious
+  images[previousImgIndex].style.display = 'none';
+  if (currentImgIndex >= images.length) {
+    currentImgIndex = 0;
+  } else if (currentImgIndex < 0) {
+    currentImgIndex = images.length + nextToPrevious;
+  }
+  images[currentImgIndex].style.display = 'block'
+}
+const prev = document.querySelector('#prev-btn')
+prev.addEventListener('click', () => cycle(-1))
+
+const next = document.querySelector('#next-btn')
+next.addEventListener('click', () => cycle(1))

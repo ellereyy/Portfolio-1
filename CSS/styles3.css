@@ -190,10 +190,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.media-box:hover {
-    transform: scale(1.1);
+    overflow: hidden;
 }
 
 .video-box {
@@ -206,8 +203,6 @@ footer {
     align-items: center;
     overflow: hidden;
 }
-
-
 
 .plain-box {
     margin: 10px;
@@ -250,11 +245,29 @@ footer {
     align-items: center;
 }
 
+.single-img-container {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.single-img-container:hover {
+    filter: grayscale(0);
+}
+
+
 /*IMAGE CAROUSEL CLASSES*/
 
 .carousel-container {
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.carousel-container:hover {
+    filter: grayscale(0);
 }
   
 .carousel-images {
@@ -289,9 +302,12 @@ footer {
 }
 
 .photo {
-    max-width: 400px;
+    max-width: fit-content;
 }
-  
+
+#elle {
+    width: 150%;
+}
 
 /*BOX LOCATION CLASSES*/
 
