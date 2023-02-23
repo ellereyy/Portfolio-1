@@ -25,13 +25,11 @@ a {
 body {
     margin: auto;
     background-color: var(--bg-color);
-    /* height: 100vh; */
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 50px 1fr 30px;
 }
-
-
 
 #logo {
     font-family: var(--serif-font);
@@ -89,6 +87,14 @@ aside {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 25px;
     margin: 30px 30px;
+}
+
+@media (max-width: 768px) {
+    .box-layout {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/3;
+    }
 }
 
 footer {
@@ -257,8 +263,16 @@ footer {
 
 /*MISC STYLES*/
 
+.column {
+    flex-direction: column;
+}
+
 .blkfnt {
     color: black;
+}
+
+.bold {
+    font-weight: 900;
 }
 
 .serif {
@@ -316,7 +330,7 @@ footer {
 
 @keyframes slide-in{
     0% {
-        transform: translateX(150%);
+        transform: translateX(-150%);
     }
     100% {
         transform: translateX(0);
@@ -332,10 +346,109 @@ footer {
     }
 }
 
+@keyframes slide-out-in{
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+
+.hide {
+    transform: translateX(-150%);
+}
+
+.slide-out-in {
+    animation: slide-out-in 5s both;
+}
+
 .slide-out {
-    animation: slide-out 2s;
+    animation: slide-out 1s both;
 }
 
 .slide-in {
-    animation: slide-in 2s;
+    animation: slide-in 3s forwards;
+}
+
+.graphic {
+    background-color: var(--blue-color);
+    color: var(--blue-color);
+    position: fixed;
+    /* top: 0;
+    left: 50%; */
+    transform: translateX(-50%);
+    animation: rotateDown 5s linear infinite;
+}
+
+@keyframes rotateDown {
+    0% {
+      transform: rotate(0deg) translateY(0);
+    }
+    100% {
+      transform: rotate(360deg) translateY(100vh);
+    }
+  }
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 767px) {
+    body {
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px 1fr auto 30px;
+    }
+  
+    aside {
+      order: 3;
+      margin-top: auto;
+      padding-top: 3rem;
+      padding-bottom: 0;
+    }
+  
+    .box-layout {
+      grid-template-columns: 1fr;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+/* Style the hamburger menu button */
+.hamburger {
+    display: none;
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Show hamburger menu button on mobile */
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5em;
+        left: 0;
+        background-color: var(--pink-color);
+        width: 100%;
+    }
+
+    .nav-links.show .nav-btn {
+        padding: 10px 0;
+    }
 }

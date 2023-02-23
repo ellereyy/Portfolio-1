@@ -1,3 +1,11 @@
+// PAGE CHANGE ANIMATIONS 
+// IDEAS 
+//     define the function separately vs definining it as it's being passed 
+//     change the links to #s and update JS functions to open the page, 
+//         include animation to every CSS body, but only add exit styling via JS 
+//         make sure exit styling is removed after the click 
+
+
 js idea - still photo for main photobackground that turns into a video during a click 
 
 include a modal for image references 
@@ -7,9 +15,101 @@ dry code - use an index for each btn that is pressed
 
 current page to new page index 
 
+const abtPage = document.querySelector('#about-page');
+const homePage = document.querySelector('#home-page');
+const resPage = document.querySelector('#resume-page');
+const projPage = document.querySelector('#project-page');
+
+
+css graveyard
+
+#test-body {
+    margin: auto;
+    background-color: var(--bg-color);
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 30px;
+}
+
+#test-about {
+    display: none;
+}
 
 
 JS GRAVEYARD
+
+// BELOW: JS FOR SLIDIDNG PAGE EFFECRTS ON BTN CLICK - buttons are linked to #
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   abtPage.classList.add('slide-in');
+// });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     homePage.classList.add('slide-in');
+// });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   resPage.classList.add('slide-in');
+// });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   projPage.classList.add('slide-in');
+// });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   homePage.classList.add('slide-in');
+//   abtPage.classList.add('slide-in');
+//   resPage.classList.add('slide-in');
+//   projPage.classList.add('slide-in');
+// });
+
+
+let navBtns = document.getElementsByClassName('nav-btn');
+let mainContent = document.querySelector('.box-layout');
+const abtPage = document.querySelector('#about-page');
+const homePage = document.querySelector('#home-page');
+const resPage = document.querySelector('#resume-page');
+const projPage = document.querySelector('#project-page');
+
+for (let i = 0; i < navBtns.length; i++) {
+  console.log(navBtns[i]);
+};
+
+function openPage {
+  const navBtns = Array.from(document.getElementsByClassName('nav-btn'));
+  const pageContent = Array.from(document.querySelectorAll('.box-layout'));
+    while (navBtns.indexOf() === pageContent.indexOf()) {
+
+    }
+}
+
+let navBtns = document.getElementsByClassName('nav-btn');
+let navBtnArray = Array.from(navBtns); // create a new array from navBtns
+for (let i = 0; i < navBtnArray.length; i++) {
+  let navBtn = navBtnArray[i]; // get each navBtn from the array
+  console.log(navBtnArray);
+}
+
+let pageContent = document.querySelectorAll('.box-layout')
+for (let i = 0; i < pageContent.length; i++) {
+  console.log(pageContent[i]);
+};
+
+
+
+for (let i = 0; i < navBtns.length; i++) {
+  navBtns[i].addEventListener('click', (event) => {
+    mainContent.classList.add('slide-out');
+    setTimeout(() => {
+      window.location.href = event.target.href;
+    }, 1000);
+  });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  abtPage.classList.add('slide-in');
+});
 
 // window.onload = (event) => {
 //   if (window.location.href.indexOf(navBtns) > -1) {
