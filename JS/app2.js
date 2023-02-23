@@ -1,13 +1,14 @@
+//IMAGE CAROUSEL 
+
+
+
 //HAMBURGER MENU
 
 const hamburger = document.querySelector('.hamburger');
-
 const navLinks = document.querySelector('.nav-links');
 const logo = document.querySelector('#logo');
 
 hamburger.addEventListener('click', () => {
-  logo.classList.add('hide');
-  hamburger.classList.add('hide');
   navLinks.classList.toggle('show');
 });
 
@@ -17,20 +18,10 @@ document.addEventListener('click', (event) => {
   }
 });
 
-let navBtns = document.getElementsByClassName('nav-btn');
-
-navBtns.addEventListener('click', () =>{
-  navLinks.classList.add('hide');
-});
-
-
-
-
-//SLIDE OUT ON PAGE EXIT
+//FADE OUT ON PAGE EXIT
 
 let mainContent = document.querySelector('.box-layout');
-// let navBtns = document.getElementsByClassName('nav-btn');
-// variable commented out because it's listed above, keeping it here for my own mental sanity on the next function
+let navBtns = document.getElementsByClassName('nav-btn');
 
 for (let i = 0; i < navBtns.length; i++) {
   navBtns[i].addEventListener('click', (event) => {
@@ -44,14 +35,13 @@ for (let i = 0; i < navBtns.length; i++) {
   });
 };
 
-
-//DISPLAY/HIDE MODALS - DONE, just need to clean up CSS + js display setting maybe  
-const openBtn = document.getElementById('open-modal')
-const modal = document.getElementById('modal')
+//DISPLAY/HIDE MODALS - DONE
+const openBtn = document.getElementById('open-modal-contact')
+const modal = document.querySelector('.modal')
 const closeBtn = document.getElementById('close-btn')
 
 const openModal = () => {
-  modal.style.display = 'block';
+  modal.style.display = 'flex';
 }
 const closeModal = () => {
   modal.style.display = 'none';
@@ -61,10 +51,10 @@ openBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
 
 
+
 // PLAY FLIGHT VIDEO: DONE
 const flyVid = document.getElementById('fly-vid')
 
-if (window.location.href.includes("about.html")) {
   flyVid.addEventListener('mouseover', () => {
       flyVid.play();
   });
@@ -74,4 +64,3 @@ if (window.location.href.includes("about.html")) {
   flyVid.addEventListener('ended', () => {
       flyVid.load();
   });
-}

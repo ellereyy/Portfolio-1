@@ -24,7 +24,11 @@
     </nav>
 
     <aside class="blank">
-        <!-- <p class="graphic">. . . .</p>
+        <!-- <p class="graphic">. .</p>
+        <p class="graphic">. . . .</p>
+        <p class="graphic">. . . .</p>
+        <p class="graphic">. . . .</p>
+        <p class="graphic">. . . .</p>
         <p class="graphic">. . . .</p> -->
     </aside>
 
@@ -38,9 +42,29 @@
             <p class="blkfnt">& I am a software engineering student at General Assembly based in Mammoth Lakes, California.</p>
         </div>  
 
-        <div class="media-box c1">
-            <img src="/assets/elle_timber.jpg" alt="dog" id="prof-pic">
+        <div class="media-box c1 carousel-container">
+                <span class="carousel-btn" id="prev-btn">&#10094;</span>
+                <div class="carousel-images">
+                    <img src="/assets/elle-photo.jpg" alt="dog" class="photo" id="prof-pic">
+                    <img src="/assets/nugs.jpeg" alt="timber" class="photo" id="timber">
+                    <img src="/assets/tim.jpg" alt="nugs" class="photo" id="nugs">
+                </div>
+                <span class="carousel-btn" id="next-btn">&#10095;</span>
         </div>
+
+        <div class="media-box d2">
+            <div id="pets">
+                <img src="/assets/convict-lake.jpeg" alt="timber" class="photo">
+            </div>
+        </div>
+
+        <div id="social-small">
+            <div>
+                <a href="https://www.linkedin.com/in/elle-reynolds/" target="_blank"><img src="/assets/linkedin-icon.png" alt="linkedin" id="soc-icon"></a>
+                <a href="https://github.com/ellereyy" target="_blank"><img src="/assets/github-icon.png" alt="github" id="soc-icon"></a>
+            </div>
+        </div>
+
     </main>
 
     <aside class="social">
@@ -52,15 +76,13 @@
 
     
     <footer>
-        <a href="#" class="foot-link">References</a>
-        <a href="#" class="foot-link" id="open-modal">Contact</a>
-        <a href="#" class="foot-link">Pets</a>
+        <a href="#" class="foot-link" id="open-modal-contact">Contact</a>
     </footer>
 
-    <div id="modal">
+    <div class="modal">
         <div id="contact-modal">
-            <h4>Let's chat!</h4>
-            <p>email: elle.m.reynolds@gmail.com</p>
+            <p>Let's chat!</p>
+            <p>email: <a href="elle.m.reynolds@gmail.com"> elle.m.reynolds@gmail.com</a></p> <br>
             <a href="#" id="close-btn" class="yp-btn">Close</a>
         </div>
     </div>
