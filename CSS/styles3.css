@@ -360,25 +360,36 @@ footer {
 
 /*MEDIA QUERIES*/
 
+.hide {
+    display: none;
+}
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     body {
         grid-template-columns: 1fr;
         grid-template-rows: 50px 1fr 30px;
-
-    }
-  
-    aside {
-        order: 3;
-        margin-top: auto;
-        padding-top: 3rem;
-        padding-bottom: 0;
+        height: 100vh;
     }
   
     .box-layout {
         display: flex;
         flex-direction: column;
         grid-template-columns: 1fr;
+    }
+    .blank {
+        display: none;
+    }
+
+    .social {
+        order: 3;
+    }
+
+    .sticky {
+        display: none;
+    }
+
+    footer {
+        order: 4;
     }
 }
   
@@ -400,17 +411,14 @@ footer {
     .hamburger {
         display: flex;
     }
-}
 
-@media screen and (max-width: 600px) {
     .nav-links.show {
+        position: absolute;
+        top: 0;
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 5em;
-        left: 0;
         background-color: var(--pink-color);
-        width: 100%;
+        width: 50%;
     }
 
     .nav-links.show .nav-btn {
