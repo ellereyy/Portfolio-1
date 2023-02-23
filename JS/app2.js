@@ -9,10 +9,10 @@ for (let i = 0; i < navBtns.length; i++) {
   navBtns[i].addEventListener('click', (event) => {
     event.preventDefault();
     if (event.target.href !== window.location.href) {
-      mainContent.classList.add('slide-out');
+      mainContent.classList.add('fade-out');
       setTimeout(() => {
         window.location.href = event.target.href;
-      }, 1200);
+      }, 1000);
     }
   });
 };
