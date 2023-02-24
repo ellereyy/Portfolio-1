@@ -14,3 +14,7 @@
 *screenshots here*
 
 # Unsolved Problems / Major Hurdles
+
+# Citations 
+
+<a href="https://www.flaticon.com/free-icons/parachute" title="parachute icons">Parachute icons created by Dreamstale - Flaticon</a>
