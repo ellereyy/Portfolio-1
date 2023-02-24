@@ -1,3 +1,9 @@
 # Portfolio-1
 
-readme 
+# Technologies Used
+
+# User Stories 
+
+# Wire Frames
+
+# Unsolved Problems / Major Hurdles
