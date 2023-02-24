@@ -230,6 +230,8 @@ footer {
     font-size: 36px;
     padding: 10px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -379,6 +381,7 @@ footer {
 
 .serif {
     font-family: var(--serif-font);
+    padding: none;
 }
 
 .monospace {
@@ -464,7 +467,7 @@ footer {
     animation: fade-out .5s both;
 }
 
-/* .graphic {
+.graphic {
     color: var(--yellow-color);
     background-color: var(--yellow-color);
     border-radius: 50%;
@@ -487,7 +490,7 @@ footer {
       top: 0;
       transform: rotate(720deg);
     }
-} */
+}
 
 
 /*MEDIA QUERIES*/
@@ -521,7 +524,11 @@ footer {
         order: 4;
     }
 }
-  
+ 
+#hamburger-icon {
+    max-width: 25px;
+}
+
 .hamburger {
     display: none;
     font-size: 2em;
