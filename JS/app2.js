@@ -1,4 +1,4 @@
-//HAMBURGER MENU
+//HAMBURGER MENU- APPLIES TO ALL PAGES
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const logo = document.querySelector('#logo');
@@ -13,7 +13,7 @@ document.addEventListener('click', (event) => {
   }
 });
 
-//FADE OUT ON PAGE EXIT
+//FADE OUT ON PAGE EXIT - APPLIES TO ALL PAGES
 
 let mainContent = document.querySelector('.box-layout');
 let navBtns = document.getElementsByClassName('nav-btn');
@@ -30,7 +30,7 @@ for (let i = 0; i < navBtns.length; i++) {
   });
 };
 
-//DISPLAY/HIDE MODALS - DONE
+//DISPLAY/HIDE MODALS - APPLIES TO ALL PAGES
 const openBtn = document.getElementById('open-modal-contact')
 const modal = document.querySelector('.modal')
 const closeBtn = document.getElementById('close-btn')
@@ -42,10 +42,12 @@ const closeModal = () => {
   modal.style.display = 'none';
 }
 
-//COMING SOON CONTENT 
 
 openBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
+
+
+//"COMING SOON" CONTENT - PROJECT PAGE ONLY 
 if (window.location.pathname === '/HTML/projects.html') {
 const boxes = document.querySelectorAll('.b2, .c1, .d2');
 
@@ -64,6 +66,7 @@ const boxes = document.querySelectorAll('.b2, .c1, .d2');
   });
 }
 
+//RESUME NOTES - RESUME PAGE ONLY 
 // if (window.location.pathname === '/HTML/resume.html') {
 //   const resBtn = document.getElementById('pdf-btn');
 //   const tooltip = document.createElement('div');
@@ -79,7 +82,7 @@ const boxes = document.querySelectorAll('.b2, .c1, .d2');
 //   });
 // }
 
-// PLAY FLIGHT VIDEO: DONE
+// PLAY FLIGHT VIDEO - ABOUT PAGE ONLY 
 
 if (window.location.pathname === '/HTML/about.html') {
   const flyVid = document.getElementById('fly-vid')
@@ -94,7 +97,7 @@ if (window.location.pathname === '/HTML/about.html') {
   });
 }
 
-//IMAGE CAROUSEL (sources: corgi carousel)
+//IMAGE CAROUSEL (source: corgi carousel) - ABOUT PAGE ONLY 
 
 if (window.location.pathname === '/HTML/about.html') {
   let currentImgIndex = 0;
