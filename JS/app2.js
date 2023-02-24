@@ -7,6 +7,7 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
 
+//clicking outside of menu will close it 
 document.addEventListener('click', (event) => {
   if (navLinks.classList.contains('show') && !event.target.classList.contains('nav-links') && !event.target.classList.contains('hamburger') && !event.target.classList.contains('nav-btn')) {
     navLinks.classList.remove('show');
@@ -30,7 +31,9 @@ for (let i = 0; i < navBtns.length; i++) {
   });
 };
 
-//DISPLAY/HIDE MODALS - APPLIES TO ALL PAGES
+//double check looping necessity 
+
+//DISPLAY/HIDE MODALS - APPLIES TO ALL PAGES (source -modal lesson)
 const openBtn = document.getElementById('open-modal-contact')
 const modal = document.querySelector('.modal')
 const closeBtn = document.getElementById('close-btn')
@@ -41,7 +44,6 @@ const openModal = () => {
 const closeModal = () => {
   modal.style.display = 'none';
 }
-
 
 openBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal);
@@ -65,22 +67,6 @@ const boxes = document.querySelectorAll('.b2, .c1, .d2');
     });
   });
 }
-
-//RESUME NOTES - RESUME PAGE ONLY 
-// if (window.location.pathname === '/HTML/resume.html') {
-//   const resBtn = document.getElementById('pdf-btn');
-//   const tooltip = document.createElement('div');
-
-//   resBtn.addEventListener('mouseover', () => {
-//     tooltip.style.display = 'block';
-//     tooltip.innerHTML = '(this resume was made to get a job in the sailing industry)';
-//     resBtn.parentNode.appendChild(tooltip);
-//   });
-  
-//   resBtn.addEventListener('mouseleave', () => {
-//     tooltip.style.display = 'none';
-//   });
-// }
 
 // PLAY FLIGHT VIDEO - ABOUT PAGE ONLY 
 
