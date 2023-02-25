@@ -15,7 +15,6 @@ document.addEventListener('click', (event) => {
 });
 
 //FADE OUT ON PAGE EXIT - APPLIES TO ALL PAGES
-
 let mainContent = document.querySelector('.box-layout');
 let navBtns = document.getElementsByClassName('nav-btn');
 
