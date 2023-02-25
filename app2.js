@@ -71,7 +71,7 @@ const boxes = document.querySelectorAll('.b2, .c1, .d2');
 
 console.log(window.location.href)
 
-if (window.location.pathname === 'about.html') {
+if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/about.html') {
   const flyVid = document.getElementById('fly-vid')
   flyVid.addEventListener('mouseover', () => {
       flyVid.play();
