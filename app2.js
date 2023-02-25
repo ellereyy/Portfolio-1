@@ -69,6 +69,8 @@ const boxes = document.querySelectorAll('.b2, .c1, .d2');
 
 // PLAY FLIGHT VIDEO - ABOUT PAGE ONLY 
 
+console.log(window.location.href)
+
 if (window.location.pathname === 'about.html') {
   const flyVid = document.getElementById('fly-vid')
   flyVid.addEventListener('mouseover', () => {
