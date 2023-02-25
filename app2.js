@@ -50,7 +50,7 @@ closeBtn.addEventListener('click', closeModal);
 
 
 //"COMING SOON" CONTENT - PROJECT PAGE ONLY 
-if (window.location.pathname === '/HTML/projects.html') {
+if (window.location.pathname === '/projects.html') {
 const boxes = document.querySelectorAll('.b2, .c1, .d2');
 
   boxes.forEach(box => {
@@ -70,7 +70,7 @@ const boxes = document.querySelectorAll('.b2, .c1, .d2');
 
 // PLAY FLIGHT VIDEO - ABOUT PAGE ONLY 
 
-if (window.location.pathname === '/HTML/about.html') {
+if (window.location.pathname === '/about.html') {
   const flyVid = document.getElementById('fly-vid')
   flyVid.addEventListener('mouseover', () => {
       flyVid.play();
@@ -85,7 +85,7 @@ if (window.location.pathname === '/HTML/about.html') {
 
 //IMAGE CAROUSEL (source: corgi carousel) - ABOUT PAGE ONLY 
 
-if (window.location.pathname === '/HTML/about.html') {
+if (window.location.pathname === '/about.html') {
   let currentImgIndex = 0;
   let previousImgIndex = 0; 
   const images = document.getElementsByClassName('photo');
