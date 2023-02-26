@@ -49,7 +49,7 @@ closeBtn.addEventListener('click', closeModal);
 
 
 //"COMING SOON" CONTENT - PROJECT PAGE ONLY 
-if (window.location.pathname === 'projects.html') {
+if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/projects.html') {
 const boxes = document.querySelectorAll('.b2, .c1, .d2');
 
   boxes.forEach(box => {
@@ -86,7 +86,7 @@ if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/about.html'
 
 //IMAGE CAROUSEL (source: corgi carousel) - ABOUT PAGE ONLY 
 
-if (window.location.pathname === 'about.html') {
+if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/about.html') {
   let currentImgIndex = 0;
   let previousImgIndex = 0; 
   const images = document.getElementsByClassName('photo');
