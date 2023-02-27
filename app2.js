@@ -8,8 +8,7 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
 
-
-//clicking to make menu disappear 
+//click anywhere to make menu disappear 
 document.addEventListener('click', (event) => {
   if (navLinks.classList.contains('show') && !event.target.classList.contains('hamburger')) {
     navLinks.classList.remove('show');
@@ -32,7 +31,7 @@ for (let i = 0; i < navBtns.length; i++) {
   });
 };
 
-//DISPLAY/HIDE MODALS - APPLIES TO ALL PAGES (source -modal lesson)
+//DISPLAY/HIDE MODALS - APPLIES TO ALL PAGES (source: class modal lesson)
 const openBtn = document.getElementById('open-modal-contact')
 const modal = document.querySelector('.modal')
 const closeBtn = document.getElementById('close-btn')
@@ -78,7 +77,6 @@ const projDisply = document.getElementsByClassName('proj-display');
 }
 
 // PLAY FLIGHT VIDEO - ABOUT PAGE ONLY 
-
 if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/about.html' || window.location.pathname === '/about.html') {
   const flyVid = document.getElementById('fly-vid')
   flyVid.addEventListener('mouseover', () => {
