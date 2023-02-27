@@ -29,7 +29,6 @@ for (let i = 0; i < navBtns.length; i++) {
     }
   });
 };
-
 //double check looping necessity 
 
 //DISPLAY/HIDE MODALS - APPLIES TO ALL PAGES (source -modal lesson)
@@ -49,29 +48,54 @@ closeBtn.addEventListener('click', closeModal);
 
 
 //"COMING SOON" CONTENT - PROJECT PAGE ONLY 
-if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/projects.html') {
+if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/projects.html' || window.location.pathname === '/projects.html') {
 const boxes = document.querySelectorAll('.b2, .c1, .d2');
+const projDisply = document.getElementsByClassName('proj-display');
 
-  boxes.forEach(box => {
-    box.addEventListener('mouseover', () => {
+boxes.forEach(box => {
+  box.addEventListener('mouseover', () => {
+    if (box.querySelector('.proj-display')) {
+      for (let i = 0; i < projDisply.length; i++) {
+        projDisply[i].style.display = 'flex';
+      }
+    } else {
       const span = document.createElement('span');
       span.className = 'coming-soon';
       span.innerHTML = 'Coming Soon';
       box.appendChild(span);
-    });
-
-    box.addEventListener('mouseout', () => {
-      const span = box.querySelector('.coming-soon');
-      box.removeChild(span);
-    });
+    }
   });
+  box.addEventListener('mouseout', () => {
+    const span = box.querySelector('.coming-soon');
+    if (span) {
+      box.removeChild(span);
+    }
+    for (let i = 0; i < projDisply.length; i++) {
+      projDisply[i].style.display = 'none';
+    }
+  });
+});
+
+
+  // ORIGINAL JS FORMATTING
+  // boxes.forEach(box => {
+  //   box.addEventListener('mouseover', () => {
+  //     const span = document.createElement('span');
+  //     span.className = 'coming-soon';
+  //     span.innerHTML = 'Coming Soon';
+  //     box.appendChild(span);
+  //   });
+
+  //   box.addEventListener('mouseout', () => {
+  //     const span = box.querySelector('.coming-soon');
+  //     box.removeChild(span);
+  //   });
+  // });
 }
 
 // PLAY FLIGHT VIDEO - ABOUT PAGE ONLY 
 
-console.log(window.location.href)
-
-if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/about.html') {
+if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/about.html' || window.location.pathname === '/about.html') {
   const flyVid = document.getElementById('fly-vid')
   flyVid.addEventListener('mouseover', () => {
       flyVid.play();
@@ -86,7 +110,7 @@ if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/about.html'
 
 //IMAGE CAROUSEL (source: corgi carousel) - ABOUT PAGE ONLY 
 
-if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/about.html') {
+if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/about.html' || window.location.pathname === '/about.html') {
   let currentImgIndex = 0;
   let previousImgIndex = 0; 
   const images = document.getElementsByClassName('photo');
@@ -100,7 +124,7 @@ if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/about.html'
     } else if (currentImgIndex < 0) {
       currentImgIndex = images.length + nextToPrevious;
     }
-    images[currentImgIndex].style.display = 'block'
+    images[currentImgIndex].style.display = 'flex'
   }
   const prev = document.querySelector('#prev-btn')
   prev.addEventListener('click', () => cycle(-1))
