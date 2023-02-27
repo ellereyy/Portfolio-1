@@ -9,9 +9,9 @@ hamburger.addEventListener('click', () => {
 });
 
 
-//clicking outside of menu will close it - try other ways to do this 
+//clicking to make menu disappear 
 document.addEventListener('click', (event) => {
-  if (navLinks.classList.contains('show') && !event.target.classList.contains('nav-links') && !event.target.classList.contains('hamburger') && !event.target.classList.contains('nav-btn')) {
+  if (navLinks.classList.contains('show') && !event.target.classList.contains('hamburger')) {
     navLinks.classList.remove('show');
   }
 });
@@ -31,7 +31,6 @@ for (let i = 0; i < navBtns.length; i++) {
     }
   });
 };
-//double check looping necessity 
 
 //DISPLAY/HIDE MODALS - APPLIES TO ALL PAGES (source -modal lesson)
 const openBtn = document.getElementById('open-modal-contact')
