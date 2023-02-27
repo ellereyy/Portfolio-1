@@ -17,6 +17,7 @@ Option 2:
 
 # Wire Frames
 Original Designs 
+
 <img src="wire-frames/wire1.png"> 
 <img src="wire-frames/wire2.png"> 
 <img src="wire-frames/wire3.png"> 
