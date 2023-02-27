@@ -1,0 +1,80 @@
+body {
+    max-width: 600px;
+    margin: auto;
+    color: navy;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    background-image: url(images/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#game {
+    background-color: antiquewhite;
+    border-radius: 5%;
+    padding: 20px 15px 15px 15px;
+}
+
+/* #img-update {
+
+} */
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#correct-word {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+#letter-box {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    background-color: antiquewhite;
+    justify-content: center;
+}
+
+.letter-button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.2em;
+    background-color: rgb(25, 25, 112);
+    color: white;
+    transition-duration: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+.letter-button:hover {
+    background-color: antiquewhite;
+    border: 3px solid rgb(25, 25, 112);
+    color: rgb(25, 25, 112);
+}
+
+#references {
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 300px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        max-height: 10vh;
+    }
+}
