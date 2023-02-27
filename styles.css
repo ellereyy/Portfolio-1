@@ -92,10 +92,6 @@ aside {
     z-index: 2;
 }
 
-/* #soc-icon {
-    filter: grayscale(100%);
-} */
-
 .box-layout {
     background-color: var(--bg-color);
     display: grid;
@@ -269,6 +265,13 @@ footer {
     transform: scale(1);
 }
 
+/* .job {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+} */
+
 
 /*IMAGE CAROUSEL CLASSES*/
 
@@ -320,12 +323,7 @@ footer {
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 10px;
     max-width: 250px;
-}
-
-#pdf-btn:hover + #resume-note > p {
-    display: flex;
 }
 
 
