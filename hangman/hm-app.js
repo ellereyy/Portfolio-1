@@ -8,7 +8,7 @@ let charactersAnswer = wordAnswer.split('');
 const buttons = document.querySelectorAll('.letter-button');
 console.log(charactersAnswer); 
 
-const hangFiles = ['images/iterations/hangman0.png', 'images/iterations/hangman1.png', 'images/iterations/hangman2.png', 'images/iterations/hangman3.png', 'images/iterations/hangman4.png', 'images/iterations/hangman5.png', 'images/iterations/hangman6.png', 'images/iterations/hangman7.png']
+const hangFiles = ['/images/iterations/hangman0.png', '/images/iterations/hangman1.png', '/images/iterations/hangman2.png', '/images/iterations/hangman3.png', '/images/iterations/hangman4.png', '/images/iterations/hangman5.png', '/images/iterations/hangman6.png', '/images/iterations/hangman7.png']
 
 //------------DISPLAY THE BLANK SPACE FOR THE WORD 
 const wordDisplay = document.getElementById('correct-word');
