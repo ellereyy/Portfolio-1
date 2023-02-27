@@ -3,11 +3,13 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const logo = document.querySelector('#logo');
 
+//show dropdown menu
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
 
-//clicking outside of menu will close it 
+
+//clicking outside of menu will close it - try other ways to do this 
 document.addEventListener('click', (event) => {
   if (navLinks.classList.contains('show') && !event.target.classList.contains('nav-links') && !event.target.classList.contains('hamburger') && !event.target.classList.contains('nav-btn')) {
     navLinks.classList.remove('show');
@@ -51,46 +53,29 @@ closeBtn.addEventListener('click', closeModal);
 if (window.location.href === 'https://ellereyy.github.io/Portfolio-1/projects.html' || window.location.pathname === '/projects.html') {
 const boxes = document.querySelectorAll('.b2, .c1, .d2');
 const projDisply = document.getElementsByClassName('proj-display');
-
-boxes.forEach(box => {
-  box.addEventListener('mouseover', () => {
-    if (box.querySelector('.proj-display')) {
-      for (let i = 0; i < projDisply.length; i++) {
-        projDisply[i].style.display = 'flex';
+  boxes.forEach(box => {
+    box.addEventListener('mouseover', () => {
+      if (box.querySelector('.proj-display')) {
+        for (let i = 0; i < projDisply.length; i++) {
+          projDisply[i].style.display = 'flex';
+        }
+      } else {
+        const span = document.createElement('span');
+        span.className = 'coming-soon';
+        span.innerHTML = 'Coming Soon';
+        box.appendChild(span);
       }
-    } else {
-      const span = document.createElement('span');
-      span.className = 'coming-soon';
-      span.innerHTML = 'Coming Soon';
-      box.appendChild(span);
-    }
+    });
+    box.addEventListener('mouseout', () => {
+      const span = box.querySelector('.coming-soon');
+      if (span) {
+        box.removeChild(span);
+      }
+      for (let i = 0; i < projDisply.length; i++) {
+        projDisply[i].style.display = 'none';
+      }
+    });
   });
-  box.addEventListener('mouseout', () => {
-    const span = box.querySelector('.coming-soon');
-    if (span) {
-      box.removeChild(span);
-    }
-    for (let i = 0; i < projDisply.length; i++) {
-      projDisply[i].style.display = 'none';
-    }
-  });
-});
-
-
-  // ORIGINAL JS FORMATTING
-  // boxes.forEach(box => {
-  //   box.addEventListener('mouseover', () => {
-  //     const span = document.createElement('span');
-  //     span.className = 'coming-soon';
-  //     span.innerHTML = 'Coming Soon';
-  //     box.appendChild(span);
-  //   });
-
-  //   box.addEventListener('mouseout', () => {
-  //     const span = box.querySelector('.coming-soon');
-  //     box.removeChild(span);
-  //   });
-  // });
 }
 
 // PLAY FLIGHT VIDEO - ABOUT PAGE ONLY 

@@ -324,6 +324,10 @@ footer {
     max-width: 250px;
 }
 
+#pdf-btn:hover + #resume-note > p {
+    display: flex;
+}
+
 
 /*BOX LOCATION CLASSES*/
 
