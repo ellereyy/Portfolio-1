@@ -6,13 +6,13 @@
 
 # Installation Instructions 
 Option 1: 
-- open https://ellereyy.github.io/Portfolio-1/index.html in your browser 
+- Open https://ellereyy.github.io/Portfolio-1/index.html in your browser 
 
 Option 2: 
 - Clone this repository to your local machine & view on VS code preview
 
 # User Stories 
-- As a small business owner, I want to see a portfolio that demonstrates web development skills and design cohesiveness so it helps me determine if I should work with this person. 
+- As a small business owner, I want to see a portfolio that demonstrates web development skills and design cohesiveness so it helps me determine if I should work with Elle. 
 - As a hiring manager, I want to see a portfolio that displays a range of skills along with creativity so it helps confirm hiring decisions. 
 
 # Wire Frames
@@ -46,5 +46,7 @@ Updated design - developed after first iteration looked too plain
 
 # Citations 
 <a href="https://www.flaticon.com/free-icons/parachute" title="parachute icons">Parachute icons created by Dreamstale - Flaticon</a>
+
 <a href="https://www.w3schools.com/"> W3 Schools</a>
+
 <a href="https://developer.mozilla.org/en-US/">Developer.Mozilla</a>
