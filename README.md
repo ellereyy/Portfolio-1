@@ -5,10 +5,10 @@
 - HTML, CSS & JavaScript
 
 # Installation Instructions 
-A) 
+Option 1: 
 - open https://ellereyy.github.io/Portfolio-1/index.html in your browser 
 
-B)
+Option 2: 
 - Clone this repository to your local machine & view on VS code preview
 
 # User Stories 
@@ -16,11 +16,14 @@ B)
 - As a hiring manager, I want to see a portfolio that displays a range of skills along with creativity so it helps confirm hiring decisions. 
 
 # Wire Frames
+Original Designs 
 <img src="wire-frames/wire1.png"> 
 <img src="wire-frames/wire2.png"> 
 <img src="wire-frames/wire3.png"> 
 <img src="wire-frames/wire4.png"> 
 
+Updated design - developed after first iteration looked too plain 
+<img src="assets/updated-wire.png">
 
 # Unsolved Problems / Major Hurdles
 
@@ -36,10 +39,11 @@ B)
     - I had to scrape through my CSS file and clean it up and find errors multiple times 
 
 *Linking Hangman - Unsolved Problem*
-In linking my hangman game, I struggled to get the pathnames to work for the changing images. For the rest of my site, I used URLs instead of pathnames to isolate certain JS functions. However, I wasn't able to finalize this in my hangman images since each image didn't have a separate URL. 
+- In linking my hangman game, I struggled to get the pathnames to work for the changing images. For the rest of my site, I used URLs instead of pathnames to isolate certain JS functions. 
+- However, I wasn't able to finalize this in my hangman images since each image didn't have a separate URL. 
 
 
 # Citations 
 <a href="https://www.flaticon.com/free-icons/parachute" title="parachute icons">Parachute icons created by Dreamstale - Flaticon</a>
-<a href="https://www.w3schools.com/"></a>
-<a href="https://developer.mozilla.org/en-US/"></a>
+<a href="https://www.w3schools.com/"> W3 Schools</a>
+<a href="https://developer.mozilla.org/en-US/">Developer.Mozilla</a>
