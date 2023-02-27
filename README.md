@@ -1,4 +1,5 @@
-# Portfolio-1
+# Portfolio - Elle Reynolds 
+Welcome to my portfolio!
 <img src="assets/portfolio-preview .png">
 
 # Technologies Used
